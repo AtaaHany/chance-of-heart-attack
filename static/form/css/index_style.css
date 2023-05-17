@@ -1,0 +1,28 @@
+body 
+{
+    font-family: 'Hammersmith One', sans-serif;
+    background-image: url(../img/heart-banner-cardiac-technology.jpg);
+    background-size: 100% 100%;
+}
+.text-spec
+{
+    color:#0b82a7;
+    
+}
+.bg-spec
+{
+    background-color: #0b82a7;
+}
+#settings
+{
+    margin-top: 6%;
+}
+#quiz
+{
+    display: none;
+}
+
+
+
+
+

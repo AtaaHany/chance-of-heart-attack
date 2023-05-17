@@ -1,0 +1,70 @@
+.home
+{
+    background-color:black !important;
+    background-size: 100% 100%;
+    text-align: center;
+    color: white;
+}
+.caption
+{
+    height: 100%;
+}
+.layer
+{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0)
+}
+.caption p
+{
+    width: 40%;
+}
+.caption a
+{
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+    text-transform: uppercase;
+}
+.caption a:hover
+{
+    background-color: white;
+    color: black;
+}
+
+
+.typewriter:before{border-right:2px solid white;
+    content:"";
+    display: inline-block;
+    overflow: hidden;
+    font-size: 3em;
+    width:7em;
+    white-space: nowrap;
+    }
+    
+    .animated:before{animation:textCursor 500ms steps(14) infinite normal,
+      typewriter 13s steps(20) 1s infinite alternate;
+    
+    }
+    
+    
+    @keyframes textCursor{
+      from{border-color:(255,255,255,.75)}
+      to{border-color:transparent}
+    }
+    
+    
+    @keyframes typewriter{
+      0%{width:0;content:"SAVE YOUR HEART"}
+      40%{width:8em;content:"SAVE YOUR HEART"}
+      60%{width:0;content:"SAVE YOUR HEART"}
+      80%{width:8em;content:"SAVE YOUR HEART"}
+      100%{width:0;content:"SAVE YOUR HEART"}
+    }
+
+    .hd
+    {
+        font-size: 70px !important;
+        font-weight: bolder;
+        text-transform: uppercase;
+    }

@@ -1,0 +1,1 @@
+https://opentdb.com/api.php?amount=20&category=21&difficulty=medium&type=multiple
