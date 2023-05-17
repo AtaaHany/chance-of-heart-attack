@@ -1,0 +1,64 @@
+<html>
+<head>
+  <link rel="stylesheet" href="/static/report/css/index_style.css">
+</head>
+<body>
+  
+    <!-- Modal trigger -->
+    <a class="btn special">View Result &#9995;</a>
+
+    <!-- Modal -->
+    <div id='out' class="modal">
+      <!-- modal content -->
+      <div class="modal-content">
+        <div class="modal-header" id="modal-header">
+          <h2  class="title-f"> {{ prediction }} <span class="close">&times;</span></h2>
+        </div>
+        <div class="modal-body">
+          <p class ="war">
+            Manage your blood pressure: High blood pressure can damage your arteries and increase your risk of heart attack. Work with your healthcare provider to monitor and manage your blood pressure through lifestyle changes and, if necessary, medication.
+          </p>
+        </div>
+      
+      </div>
+    </div>
+  <div class="container">
+    <div class="text">
+      <h1>Our Advices....</h1>
+      <br>
+      <p>1.Maintain a healthy diet <br> 2.Exercise regularly <br> 3.Don't smoke <br> 4.Manage stress <br> 5.Control your blood pressure <br> 6.Maintain a healthy weight <br> 7.Get enough sleep</p>
+    </div>
+  <div class="toggleBtn">
+    <ion-icon class="custom-icon" name="receipt-outline"></ion-icon>
+
+  </div>
+  </div>
+
+<script>
+  const modal = document.querySelector(".modal");
+const modalContent = document.querySelector(".modal-content");
+
+document.querySelector(".btn").addEventListener("click", function() {
+  modal.style.display = "block";
+  modalContent.classList.add("show");
+});
+
+document.querySelector(".close").addEventListener("click", function() {
+  modal.style.display = "none";
+  modalContent.classList.remove("show");
+});
+
+window.onclick = e => {
+  if (e.target == modal) {
+    modal.style.display = "none";
+    modalContent.classList.remove("show");
+  }
+};
+
+
+</script>
+<script src="/static/Report/js/main.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

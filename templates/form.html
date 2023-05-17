@@ -1,0 +1,124 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/css/all.min.css">
+  <link rel="stylesheet" href="/static/css/animate.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/form/css/index_style.css">
+</head>
+
+<body>
+
+
+  <div class="container p-4">
+  
+    <section id="settings"
+    >
+      
+     <div class="overflow-auto shadow-lg rounded-lg m-auto w-50 bg-white">
+       <h1 class="text-center py-5 text-spec bg-light border-bottom">Save Your Life!</h1>
+       
+ 
+        <div class="p-4">
+      <form action="{{ url_for('report') }}", method="POST">
+        <input  id="age" min="0" max="100"  required name="age" class="form-control mb-2" type="number"  placeholder="AGE">
+        
+        <label for="difficulty" class="text-spec ml-1">GENDER</label>
+        <div class="form-check">
+        <label class="form-check-label ml-1">
+          <input type="radio" class="form-check-input " name="gender" id="gender" value="1" checked  name="difficulty"> MALE </label>
+        </div>
+        <div class="form-check">
+         <label class="form-check-label ml-1">
+           <input type="radio" class="form-check-input" name="gender" id="gender" value="0" name="difficulty" > FEMALE </label>
+         </div>
+        <select required class="form-control mb-2" name="chesspain" id="chesspain" placeholder="Chest Pain">
+          <option hidden selected>Chest Pain</option>
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+        </select>
+        <select required class="form-control mb-2" name="Vessels" id="Vessels" placeholder="No of Major Vessels">
+          <option hidden selected value="">No of Major Vessels </option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+        <select  required class="form-control mb-2" name="ChessPainType" id="ChessPainType" placeholder="Chess Pain">
+          <option hidden selected value="">Chest Pain Type </option>
+          <option value="0">Typical Augina</option>
+          <option value="1">ATypical Augina</option>
+          <option value="2">Non Aungina Pain</option>
+          <option value="3">Asymptomatic</option>
+        </select>
+        <input required id="Cholsterol" name="Cholsterol" class="form-control mb-2" type="number"  placeholder="Cholsterol" min="100" max="600" >
+        <select required class="form-control mb-2"name="BloodSugar" id="BloodSugar" placeholder="Chess Pain">
+          <option hidden selected value="">Fasting Blood Sugar </option>
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+        </select>
+        <select required class="form-control mb-2" name="ECG" id="ECG" placeholder="Chess Pain">
+          <option hidden selected value="">Diagnostic Reslting ECG </option>
+          <option value="0">Normal</option>
+          <option value="1">Having ST-T wave abnormal</option>
+          <option value="2">Left ventricular hypetrophy</option>
+        </select>
+        <input min="60" max="220" required id="HeartRate" name="HeartRate" class="form-control mb-2" type="number"  placeholder="Max Heart Rate Archived"  >
+        <input  min="60" max="220" required id="BloodPressure" name="BloodPressure" class="form-control mb-2" type="number"  placeholder="Blood Pressure"  >
+        <select required class="form-control mb-2" name="Slop" id="Slop" placeholder="Chess Pain">
+          <option hidden selected value="">Slop </option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+        </select>
+        <select required class="form-control mb-2" name="Thaliunm" id="Thaliunm" placeholder="Chess Pain">
+          <option hidden selected value="">Thaliunm Test </option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="1">2</option>
+          <option value="2">3</option>
+        </select>
+        
+             <a href=" {{ url_for('report') }}"> <button id="startBtn" class="btn float-right py-2 px-4 bg-spec rounded-pill my-4 text-white"> CHECK</button></a>
+           </form>
+            </div>
+           
+         </div>
+       </div>
+     </div>
+     
+   </section>
+  
+  </div>
+
+  </div>
+    
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="/static/js/jquery-3.5.1.js"></script>
+  <script src="/static/js/popper.min.js"></script>
+  <script src="/static/js/bootstrap.min.js"></script>
+  <script src="/static/js/wow.min.js"></script>
+  <script src="/static/js/main.js" type="module"></script>
+
+</body>
+
+</html>
