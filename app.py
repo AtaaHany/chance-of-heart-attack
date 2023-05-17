@@ -42,7 +42,7 @@ def report():
         BloodPressure = request.form['BloodPressure']
         Slop = request.form['Slop']
         Thaliunm = request.form['Thaliunm']
-        #OldPeak = request.form['OldPeak']
+       
         
         input_variables = pd.DataFrame([[age, gender, ChessPainType, BloodPressure, Cholsterol, BloodSugar, ECG, HeartRate, Vessels, Slop, chesspain, Thaliunm]],
                                     columns=['age', 'gender', 'ChessPainType', 'BloodPressure', 'Cholsterol', 'BloodSugar', 'ECG', 'HeartRate', 'Vessels', 'Slop', 'chesspain', 'Thaliunm'],
